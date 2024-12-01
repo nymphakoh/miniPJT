@@ -1,0 +1,63 @@
+/*전체 페이지 스타일지정*/
+body {
+    font-family: Arial, sans-serif; /*arial 폰트 or 시스템 기본 폰트로 지정*/
+    background-color: #f4f4f4; /*배경색 지정*/
+    margin: 0; /*기본 여백 제거*/
+    padding: 0; /*패딩 제거*/
+    display: flex; /*페이지를 flexbox로 지정해 자식요소 정렬*/
+    justify-content: center; /*가로 가운데 정렬*/
+    align-items: center; /*세로 가운데 정렬*/
+    height: 100vh; /*페이지 높이를 뷰포트(웹페이지의 보이는의 100%로 설정*/
+  }
+  /*채팅 컨테이너 스타일 지정*/
+  .chat-container {
+    width: 600px; /*채팅컨테이너 너비 지정*/
+    background-color: #fff; /*배경색 지정*/
+    border-radius: 10px; /*컨테이너 모서리를 둥글게 지정*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*컨테이너 주변에 그림자 추가*/
+    overflow: hidden; /*컨테이너 안의 글이 넘칠경우 넘친부분이 보이지 않게 설정 */
+  }
+  
+  /*헤더 설정*/
+  h1 {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 10px; /*헤더 내부 공간 설정 좀 더 여유롭게 글 배치*/
+  }
+  /*채팅창 설정*/
+  .chat-box {
+    height: 400px;
+    overflow-y: auto; /*내용이 많아지면 세로 스크롤 생기게 함*/
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /*하단에 선 추가해서 입력 영영과 구분*/
+  }
+  /*입력창, 버튼 설정*/
+  .input-container {
+    display: flex; /*입력창, 버튼을 나란히 배치*/
+    padding: 10px; 
+  }
+  /*user 입력창 스타일*/
+  #user-input {
+    flex: 1; /*최대한 가능한 공간을 많이 가지게 설정*/
+    padding: 10px;
+    border: 1px solid #ddd; /*입력창 테두리 지정*/
+    border-radius: 5px;
+  }
+  
+  /*버튼 스타일 지정*/
+  #send-button {
+    margin-left: 10px; /*입력창/버튼 사이 간격 지정*/
+    padding: 10px;
+    background-color: #007BFF; /*버튼 색 지정*/
+    color: white; /*버튼 글 색상 지정*/
+    border: none; /*테두리 없음*/
+    border-radius: 5px; 
+    cursor: pointer; /*버튼 위에 마우스를 올리면 포인터 커서로 변경하기*/
+  }
+
+  /*버튼 효과지정*/
+  #send-button:hover { /*버튼 위에 마우스를 올리면 색이 변경되게 지정*/
+    background-color: #0056b3; /*원래 버튼색보다 조금 어두운 파란색으로 지정*/
+  }
